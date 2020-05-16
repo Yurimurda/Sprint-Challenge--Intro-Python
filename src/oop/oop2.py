@@ -8,7 +8,10 @@ class GroundVehicle():
         self.num_wheels = num_wheels
 
     # TODO
-
+    def drive(self, num_wheels):
+        print("vroooom")
+        if num_wheels == 0:
+            num_wheels == 4
 
 # Subclass Motorcycle from GroundVehicle.
 #

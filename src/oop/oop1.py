@@ -22,20 +22,25 @@
 class Vehicle:
     def __init__(self, Vehicle):
         self.Vehicle = Vehicle
-    pass
+    
+    def VehicleCheck(self):
+        print("I am a Vehicle")
+        
 # Ground Classes
 class GroundVehicle(Vehicle):
     def __init__(self, Vehicle):
         self.Vehicle = GroundVehicle
-    pass
+        pass
 
 class Car(GroundVehicle):
-    def __init__(self, Vehicle):
-        self.Vehicle = Car
-    pass
+    def __init__(self, GroundVehicle):
+        self.GroundVehicle = Car
+        pass
 
 class MotorCycle(GroundVehicle):
-    pass
+    def __init__(self, GroundVehicle):
+        self.GroundVehicle = MotorCycle
+        pass
 
 
 # Air Classes
@@ -44,10 +49,12 @@ class FlightVehicle(Vehicle):
     pass
 
 class Airplane(FlightVehicle):
-    def __init__(self, Vehicle):
-        self.Vehicle = Airplane
-    pass
+    def __init__(self, FlightVehicle):
+        self.FlightVehicle = Airplane
+        pass
 
 class StarShip(FlightVehicle):
-    pass
+    def __init__(self, FlightVehicle):
+        self.FlightVehicle = StarShip
+        pass
 
